@@ -6,6 +6,7 @@
 # include <stdlib.h>
 # include <sys/stat.h>
 # include <fcntl.h>
+# include <time.h>
 
 typedef struct s_map{
 	int	height;

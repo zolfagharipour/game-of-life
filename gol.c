@@ -9,10 +9,12 @@ int	main()
 
 	map = map_open("map3.txt", &map_d);
 
-	while (i < 30)
+	while (i < 100)
 	{
+		write (1, "\033[0;0H", 7);
 		map_print(map, map_d);
 		map = next_step(map, map_d);
+		usleep (400000);
 		i++;
 	}
 	i = 0;

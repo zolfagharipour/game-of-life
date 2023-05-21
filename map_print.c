@@ -11,7 +11,7 @@ void	map_print(int **map, t_map map_d)
 		{
 			if (map[j][i] == 0)
 			{
-				write (1, "  ", 2);
+				write (1, "- ", 2);
 			}
 			else
 			{
